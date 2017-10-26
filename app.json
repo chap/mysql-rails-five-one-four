@@ -1,0 +1,12 @@
+{
+  "environments": {
+    "test": {
+      "addons": [
+        "cleardb"
+      ],
+      "scripts": {
+        "test": "rake test"
+      }
+    }
+  }
+}
