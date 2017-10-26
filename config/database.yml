@@ -6,4 +6,4 @@ development:
   pool: 5
 
 test:
-  url: <%= ENV['CLEARDB_DATABASE_URL'].gsub('mysql','mysql2') %>
+  url: <%= ENV['CLEARDB_DATABASE_URL'] %>
