@@ -3,7 +3,8 @@
     "test": {
       "addons": [
         "cleardb",
-        "rediscloud"
+        "rediscloud",
+        "heroku-redis"
       ],
       "scripts": {
         "test": "env && rake test"
