@@ -2,10 +2,11 @@
   "environments": {
     "test": {
       "addons": [
-        "cleardb"
+        "cleardb",
+        "rediscloud"
       ],
       "scripts": {
-        "test": "rake test"
+        "test": "env && rake test"
       }
     }
   }
