@@ -6,7 +6,7 @@
         "rediscloud"
       ],
       "scripts": {
-        "test-setup": "(sleep 30 && env) & env",
+        "test-setup": "(sleep 120 && env) & env",
         "test": "env && rake test"
       }
     }
