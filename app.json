@@ -3,10 +3,10 @@
     "test": {
       "addons": [
         "cleardb",
-        "rediscloud",
-        "heroku-redis"
+        "rediscloud"
       ],
       "scripts": {
+        "test-setup": "(sleep 30 && env) & env",
         "test": "env && rake test"
       }
     }
