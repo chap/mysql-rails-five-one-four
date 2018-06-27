@@ -3,7 +3,6 @@
     "test": {
       "addons": [
         "cleardb",
-        "rediscloud",
         "heroku-redis:in-dyno"
       ],
       "scripts": {
