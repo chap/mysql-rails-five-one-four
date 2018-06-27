@@ -3,7 +3,8 @@
     "test": {
       "addons": [
         "cleardb",
-        "rediscloud"
+        "rediscloud",
+        "heroku-redis:in-dyno"
       ],
       "scripts": {
         "test-setup": "(sleep 120 && env) & env",
