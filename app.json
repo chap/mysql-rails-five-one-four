@@ -1,4 +1,7 @@
 {
+  "addons": [
+    "jawsdb:kitefin",
+  ],
   "environments": {
     "test": {
       "addons": [
