@@ -2,7 +2,10 @@
   "environments": {
     "test": {
       "addons": [
-        "cleardb",
+        {
+          "plan": "jawsdb:kitefin",
+          "as": "DATABASE"
+        },
         "heroku-redis:in-dyno"
       ],
       "scripts": {
