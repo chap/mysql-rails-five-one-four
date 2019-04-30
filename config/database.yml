@@ -4,6 +4,3 @@ development:
   username: root
   password:
   pool: 5
-
-test:
-  url: <%= ENV['CLEARDB_DATABASE_URL'].present? ? ENV['CLEARDB_DATABASE_URL'].gsub('mysql','mysql2') : 'mysql2://root:@localhost/mysql-rails-five-one-four_test' %>

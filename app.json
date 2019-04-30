@@ -1,11 +1,17 @@
 {
+  "addons": [
+    "jawsdb:kitefin"
+  ],
   "environments": {
     "test": {
       "addons": [
-        "cleardb"
+        {
+          "plan": "jawsdb:kitefin"        },
+        "heroku-redis:in-dyno"
       ],
       "scripts": {
-        "test": "rake test"
+        "test-setup": "(sleep 120 && env) & env",
+        "test": "env && rake test"
       }
     }
   }
